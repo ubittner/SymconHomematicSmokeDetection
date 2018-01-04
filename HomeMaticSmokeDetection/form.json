@@ -1,0 +1,188 @@
+{
+    "elements": [{
+            "type": "Label",
+            "label": "HomeMatic Smoke Detection - Version 1.00 (2018-01-02, 11:15)"
+        },
+        {
+            "type": "Label",
+            "label": "----------------------------------------------------------------------------------------------------------------------------------"
+        },
+        {
+            "type": "ValidationTextBox",
+            "name": "Description",
+            "caption": "Description"
+        },
+        {
+            "type": "SelectCategory",
+            "name": "CategoryID",
+            "caption": "Category"
+        },
+        {
+            "type": "Label",
+            "label": "----------------------------------------------------------------------------------------------------------------------------------"
+        },
+        {
+            "type": "List",
+            "name": "SmokeDetectors",
+            "caption": "SmokeDetectors",
+            "add": true,
+            "delete": true,
+            "columns": [{
+                    "label": "Type",
+                    "name": "Type",
+                    "width": "80px",
+                    "add": "",
+                    "edit": {
+                        "type": "Select",
+                        "options": [{
+                                "label": "HM-Sec-SD",
+                                "value": "HM-Sec-SD"
+                            },
+                            {
+                                "label": "HM-Sec-SD-2",
+                                "value": "HM-Sec-SD-2"
+                            },
+                            {
+                                "label": "HmIP-SWSD",
+                                "value": "HmIP-SWSD"
+                            }
+                        ]
+                    }
+                }, {
+                    "label": "Serial",
+                    "name": "Serial",
+                    "width": "100px",
+                    "add": "",
+                    "edit": {
+                        "type": "ValidationTextBox"
+                    }
+                },
+                {
+                    "label": "Description",
+                    "name": "Description",
+                    "width": "auto",
+                    "add": "",
+                    "edit": {
+                        "type": "ValidationTextBox"
+                    }
+                }
+            ],
+            "values": []
+        },
+        {
+            "type": "Label",
+            "label": "----------------------------------------------------------------------------------------------------------------------------------"
+        },
+        {
+            "type": "List",
+            "name": "Notification",
+            "caption": "Notification",
+            "add": true,
+            "delete": true,
+            "columns": [{
+                    "label": "Type",
+                    "name": "Type",
+                    "width": "100px",
+                    "add": "",
+                    "edit": {
+                        "type": "Select",
+                        "options": [{
+                                "label": "WebFront Push",
+                                "value": "WebFront Push"
+                            },
+                            {
+                                "label": "HM-LC-Sw4-WM",
+                                "value": "HM-LC-Sw4-WM"
+                            },
+                            {
+                                "label": "HmIP-PCBS",
+                                "value": "HmIP-PCBS"
+                            }
+                        ]
+                    }
+                }, {
+                    "label": "Object ID",
+                    "name": "ObjectID",
+                    "width": "60px",
+                    "add": "",
+                    "edit": {
+                        "type": "SelectInstance"
+                    }
+                }, {
+                    "label": "Duration",
+                    "name": "Duration",
+                    "width": "50px",
+                    "add": "",
+                    "edit": {
+                        "type": "IntervalBox",
+                        "caption": "Seconds"
+                    }
+                },
+                {
+                    "label": "Status",
+                    "name": "Status",
+                    "width": "auto",
+                    "add": "",
+                    "edit": {
+                        "type": "Select",
+                        "options": [{
+                                "label": "deactivated",
+                                "value": "deactivated"
+                            },
+                            {
+                                "label": "activated",
+                                "value": "activated"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "values": []
+        },
+        {
+            "type": "Label",
+            "label": "----------------------------------------------------------------------------------------------------------------------------------"
+        }
+    ],
+    "actions": [{
+        "type": "Button",
+        "label": "Install Devices",
+        "onClick": "HMSD_InstallDevices($id);"
+    }],
+    "status": [{
+            "code": 101,
+            "icon": "active",
+            "caption": "HomeMatic Smoke Detection was created. Please complete configuration."
+        },
+        {
+            "code": 102,
+            "icon": "active",
+            "caption": "HomeMatic Smoke Detection is active."
+        },
+        {
+            "code": 103,
+            "icon": "active",
+            "caption": "HomeMatic Smoke Detection will be deleted."
+        },
+        {
+            "code": 104,
+            "icon": "inactive",
+            "caption": "HomeMatic Smoke Detection is inactive."
+        },
+        {
+            "code": 201,
+            "icon": "error",
+            "caption": "Please choose WebFront ID for notification!"
+        },
+        {
+            "code": 202,
+            "icon": "error",
+            "caption": "Please use a valid WebFront ID!"
+        },
+        {
+            "code": 299,
+            "icon": "error",
+            "caption": "An unknown error has occurred!"
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "translations": {
+        "de": {
+            "HomeMatic Smoke Detection - Version 1.00 (2018-01-02, 11:15)": "HomeMatic Rauch Warnmelder - Version 1.00 (2018-01-02, 11:15)",
+            "Description": "Bezeichnung",
+            "Category": "Kategorie",
+            "SmokeDetectors": "Rauchmelder",
+            "Type": "Typ",
+            "Serial": "Seriennummer",
+            "Notification": "Benachrichtigung",
+            "Duration": "Dauer",
+            "Seconds": "Sekunden",
+            "deactivated": "deaktiviert",
+            "activated": "aktiviert",
+            "AlarmDialer": "Wählgerät",
+            "AlarmDialer ID": "Wählgerät ID",
+            "Install Devices": "Rauchmelder anlegen",
+            "HomeMatic Smoke Detection was created. Please complete configuration.": "HomeMatic Rauch Wanrmelder wurde erstellt. Bitte Konfigurationsdaten vervollständigen.",
+            "HomeMatic Smoke Detection is active.": "HomeMatic Rauch Wanrmelder ist aktiv.",
+            "HomeMatic Smoke Detection will be deleted.": "HomeMatic Rauch Wanrmelder wird gelöscht.",
+            "HomeMatic Smoke Detection is inactive.": "HomeMatic Rauch Wanrmelder ist inaktiv.",
+            "Please choose WebFront ID for notification!": "Bitte WebFront ID für Benachrichtigung auswählen!",
+            "Please use a valid WebFront ID!": "Bitte eine gültige WebFront ID auswählen!",
+            "An unknown error has occurred!": "Es ist ein unbekannter Fehler aufgetreten!"
+        }
+    }
+}

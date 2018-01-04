@@ -1,0 +1,11 @@
+{
+	"id": "{F0A27D8C-DEB7-439D-872C-D5F468FD0ACF}",
+	"name": "HomeMaticSmokeDetection",
+	"type": 3,
+	"vendor": "Ulrich Bittner",
+	"aliases": [ "HomeMatic Smoke Detection" ],
+	"parentRequirements": [],
+	"childRequirements": [],
+	"implemented": [],
+	"prefix": "HMSD"
+}
